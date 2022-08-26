@@ -1,0 +1,617 @@
+:root {
+    --color-light-text-0-day: rgba(0, 0, 0, 1);
+    --color-light-text-1-day: rgba(14, 14, 44, 1);
+    --color-light-text-2-day: rgba(74, 74, 104, 1);
+    --color-light-text-3-day: rgba(140, 140, 161, 1);
+    --color-light-background-1-day: rgba(255, 255, 255, 1);
+    --color-light-background-2-day: rgba(247, 248, 250, 1);
+    --color-light-background-3-day: rgba(236, 241, 244, 1);
+    --color-dark-text-0-night: rgba(255, 255, 255, 1);
+    --color-dark-text-1-night: rgba(234, 236, 239, 1);
+    --color-dark-text-2-night: rgba(120, 123, 153, 1);
+    --color-dark-text-3-night: rgba(86, 88, 111, 1);
+    --color-dark-background-1-night: rgba(43, 44, 57, 1);
+    --color-dark-background-2-night: rgba(32, 30, 38, 1);
+    --color-dark-background-3-night: rgba(70, 70, 89, 1);
+    --color-color-green: rgba(61, 167, 44, 1);
+    --color-color-orange: rgba(237, 114, 46, 1);
+    --color-color-iris: rgba(75, 77, 237, 1);
+    --color-color-lris-10: rgba(239, 239, 253, 1);
+    --color-color-brand-900: rgba(6, 56, 42, 1);
+    --color-color-brand-800: rgba(10, 102, 77, 1);
+    --color-color-brand-700: rgba(15, 148, 112, 1);
+    --color-color-brand-600-primary: rgba(20, 195, 147, 1);
+    --color-color-brand-500: rgba(33, 232, 178, 1);
+    --color-color-brand-400: rgba(79, 237, 194, 1);
+    --color-color-brand-300: rgba(125, 242, 210, 1);
+    --color-color-brand-200: rgba(172, 246, 226, 1);
+    --color-color-brand-100: rgba(218, 251, 242, 1);
+    --color-color-brand-50: rgba(241, 254, 250, 1);
+    --color-color-brand-rgb-a-5: rgba(20, 195, 147, 0.050);
+    --color-color-brand-rgb-a-10: rgba(20, 195, 147, 0.100);
+    --color-color-brand-rgb-a-24: rgba(20, 195, 147, 0.240);
+    --color-color-brand-rgb-a-48: rgba(20, 195, 147, 0.480);
+    --color-color-brand-rgb-a-72: rgba(20, 195, 147, 0.870);
+    --color-color-red-900: rgba(53, 3, 3, 1);
+    --color-color-red-800: rgba(102, 5, 5, 1);
+    --color-color-red-700: rgba(151, 7, 7, 1);
+    --color-color-red-600: rgba(199, 10, 10, 1);
+    --color-color-red-500: rgba(243, 17, 17, 1);
+    --color-color-red-400: rgba(246, 65, 65, 1);
+    --color-color-red-300-primary: rgba(248, 113, 113, 1);
+    --color-color-red-200: rgba(250, 163, 163, 1);
+    --color-color-red-100: rgba(253, 211, 211, 1);
+    --color-color-red-50: rgba(254, 236, 236, 1);
+    --color-color-red-rgb-a-10: rgba(248, 113, 113, 0.100);
+    --color-color-red-rgb-a-24: rgba(248, 113, 113, 0.240);
+    --color-color-red-rgb-a-48: rgba(248, 113, 113, 0.480);
+    --color-color-red-rgb-a-72: rgba(248, 113, 113, 0.870);
+    --color-color-yellow-900: rgba(48, 39, 3, 1);
+    --color-color-yellow-800: rgba(73, 58, 4, 1);
+    --color-color-yellow-700: rgba(121, 97, 7, 1);
+    --color-color-yellow-600: rgba(169, 136, 9, 1);
+    --color-color-yellow-500: rgba(218, 175, 12, 1);
+    --color-color-yellow-400-primary: rgba(243, 200, 35, 1);
+    --color-color-yellow-300: rgba(246, 213, 86, 1);
+    --color-color-yellow-200: rgba(248, 225, 134, 1);
+    --color-color-yellow-100: rgba(251, 237, 182, 1);
+    --color-color-yellow-50: rgba(254, 249, 231, 1);
+    --color-grey-black: rgba(0, 0, 0, 1);
+    --color-grey-10: rgba(23, 26, 32, 1);
+    --color-grey-15: rgba(34, 34, 34, 1);
+    --color-grey-20: rgba(57, 60, 65, 1);
+    --color-grey-25: rgba(68, 68, 68, 1);
+    --color-grey-30: rgba(92, 94, 98, 1);
+    --color-grey-35: rgba(142, 142, 142, 1);
+    --color-grey-40-primary: rgba(162, 163, 165, 1);
+    --color-grey-45: rgba(187, 187, 187, 1);
+    --color-grey-50: rgba(208, 209, 210, 1);
+    --color-grey-60: rgba(226, 227, 227, 1);
+    --color-grey-65: rgba(238, 238, 238, 1);
+    --color-grey-70: rgba(244, 244, 244, 1);
+    --color-grey-75: rgba(250, 250, 250, 1);
+    --color-grey-white: rgba(255, 255, 255, 1);
+}
+
+.text-style-smallest-300 {
+    font-size: 8px;
+    font-family: "Kanit";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 12px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-smallest-400 {
+    font-size: 8px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 12px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-smallest-500 {
+    font-size: 8px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 12px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-smallest-600 {
+    font-size: 8px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 12px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-smallest-small {
+    font-size: 8px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.text-style-small-300 {
+    font-size: 12px;
+    font-family: "Kanit";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-small-400 {
+    font-size: 12px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-small-400-underline {
+    font-size: 12px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 16px;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.text-style-small-500 {
+    font-size: 12px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-small-600 {
+    font-size: 12px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 16px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-medium-300 {
+    font-size: 14px;
+    font-family: "Kanit";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-medium-400 {
+    font-size: 14px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-medium-400-underline {
+    font-size: 14px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.text-style-medium-500 {
+    font-size: 14px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-medium-600 {
+    font-size: 14px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-300 {
+    font-size: 16px;
+    font-family: "Kanit";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-400 {
+    font-size: 16px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-400-underline {
+    font-size: 16px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.text-style-body-500 {
+    font-size: 16px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-500-underline {
+    font-size: 16px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: underline;
+    text-transform: none;
+}
+
+.text-style-body-600 {
+    font-size: 16px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-600-button {
+    font-size: 16px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-2-300 {
+    font-size: 18px;
+    font-family: "Kanit";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-2-400 {
+    font-size: 18px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-2-500 {
+    font-size: 18px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-2-600 {
+    font-size: 18px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-3-400 {
+    font-size: 20px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-3-500 {
+    font-size: 20px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-body-3-600 {
+    font-size: 20px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-4-400 {
+    font-size: 24px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 134%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-4-500 {
+    font-size: 24px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 134%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-4-600 {
+    font-size: 24px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 134%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-3-400 {
+    font-size: 32px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-3-500 {
+    font-size: 32px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-3-600 {
+    font-size: 32px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-2-300 {
+    font-size: 40px;
+    font-family: "Kanit";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-2-400 {
+    font-size: 40px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-2-500 {
+    font-size: 40px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-2-600 {
+    font-size: 40px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-1-300 {
+    font-size: 64px;
+    font-family: "Kanit";
+    font-weight: 300;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-1-400 {
+    font-size: 64px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-1-500 {
+    font-size: 64px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-h-1-600 {
+    font-size: 64px;
+    font-family: "Kanit";
+    font-weight: 600;
+    font-style: normal;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-quick-start-of-small-projects-smaller-font-size {
+    font-size: 12px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-quick-start-of-small-projects-small-font-size {
+    font-size: 13px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 20px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-quick-start-of-small-projects-normal-font-size {
+    font-size: 15px;
+    font-family: "Kanit";
+    font-weight: 400;
+    font-style: normal;
+    line-height: 22px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-quick-start-of-small-projects-h-3-font-size {
+    font-size: 18px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-quick-start-of-small-projects-h-2-font-size {
+    font-size: 20px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-quick-start-of-small-projects-h-1-font-size {
+    font-size: 24px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 32px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.text-style-quick-start-of-small-projects-big-font-size {
+    font-size: 32px;
+    font-family: "Kanit";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 40px;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.effect-style-drop-shadow-primary {
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.080);
+}
+
+.effect-style-drop-shadow-secondary {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.150), 0px 4px 8px rgba(0, 0, 0, 0.200);
+}
+
+.effect-style-drop-shadow-secondary {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.150), 0px 4px 8px rgba(0, 0, 0, 0.200);
+}
+
+.effect-style-drop-shadow-tertiary {
+    box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.100), 0px 1px 1px rgba(0, 0, 0, 0.050);
+}
+
+.effect-style-drop-shadow-tertiary {
+    box-shadow: 0px 20px 36px -8px rgba(14, 14, 44, 0.100), 0px 1px 1px rgba(0, 0, 0, 0.050);
+}
+
+.effect-style-inner-shadow-illustration {
+    box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.050);
+}
+
+.effect-style-inner-shadow-input-box {
+    box-shadow: inset 0px 2px 2px -1px rgba(74, 74, 104, 0.100);
+}
